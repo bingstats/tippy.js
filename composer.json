@@ -1,5 +1,5 @@
 {
-    "name": "rpc5102/tippy.js-drupal",
+    "name": "bingstats/tippy.js",
     "description": "Highly customizable vanilla JS tooltip/popover library for Drupal 8.",
     "type": "drupal-module",
     "license": "GPL-2.0+",
