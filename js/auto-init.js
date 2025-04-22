@@ -1,7 +1,7 @@
 /**
  * @file
  * Auto-init script ported from tippy.js v4
- * 
+ *
  * @requires popper.js
  * @requires tippy.js
  */
@@ -11,7 +11,8 @@
       var content = el.getAttribute('data-tippy-content');
       if (content) {
         tippy(el, {
-          content: content
+          content: content,
+          allowHTML: true
         });
       }
     });
