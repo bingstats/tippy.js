@@ -6,9 +6,7 @@ use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Component\Utility\UrlHelper;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\Core\Asset\LibraryDiscovery;
-use Drupal\Core\Link;
-use Drupal\Core\Url;
+use Drupal\Core\Asset\LibraryDiscoveryCollector;
 
 /**
  * Defines a form that configures Tippy.js settings.
@@ -25,7 +23,7 @@ class SettingsForm extends ConfigFormBase {
   /**
    * {@inheritdoc}
    */
-  public function __construct(LibraryDiscovery $library_discovery) {
+  public function __construct(LibraryDiscoveryCollector $library_discovery) {
     $this->libraryDiscovery = $library_discovery;
   }
 
